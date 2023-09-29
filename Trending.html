@@ -10,7 +10,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
+        .movie-card .card-text,
+        .movie-card .card-title {
+            color: #fff;
+        }
 
+        .movie-card:hover {
+            transform: scale(1.02);
+        }
+
+        .movie-card .card-text,
+        .movie-card .card-title {
+            display: block;
+        }
     </style>
 </head>
 
@@ -74,7 +86,8 @@
                                 </svg>
                             </button>
                             <div class="collapse" id="searchCollapse">
-                                <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-bs-theme="dark">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                                    data-bs-theme="dark">
                             </div>
                         </div>
                     </div>
@@ -84,6 +97,226 @@
     </div>
 
     <!-- Main Trending -->
+    <div class="container mt-3">
+        <header class="p-3 rounded">
+            <h1><i class="bi bi-fire" style="color: red;"> Trending Movies</i></h1>
+            <hr>
+        </header>
+    </div>
+    <div class="container mt-4">
+        <div class="col">
+            <!-- Movie Card 1 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/jawan-poster.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Jawan</h5>
+                            <p class="card-text">A high-octane action thriller which outlines the emotional journey of a man who is set to rectify the wrongs in the society.</p>
+                            <span>Action,Thriller</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>7.6</span>
+                            </div>
+                            <a href="#" class="btn btn-primary align-item-end justify-content-end">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 2 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/Fukrey-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Fukrey 3</h5>
+                            <p class="card-text">The friends facing disastrously funny situations together and having each other's backs through the trenches to make it out of a new mess this time.</p>
+                            <span>Comedy, Crime, Drama</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>8.8</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 3 with hover effect -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/Jailer.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Jailer</h5>
+                            <p class="card-text">A retired jailer goes on a manhunt to find his son's killers. But the road leads him to a familiar, albeit a bit darker place. Can he emerge from this complex situation successfully?</p>
+                            <span>Action, Comedy, Crime</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>7.2</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- movie card-4 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/Vaccine war.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">The Vaccine War</h5>
+                            <p class="card-text">Based on India's battle against Covid-19, and the efforts the medical department took to overcome the global crisis.</p>
+                            <span>Drama, Thriller</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>8.7</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie card -5 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/expendables.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">The expendables 4</h5>
+                            <p class="card-text">Armed with every weapon they can get their hands on, the Expendables are the world's last line of defense and the team that gets called when all other options are off the table.</p>
+                            <span>Action, Adventure, Thriller</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5.2</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie card -6 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/skanda.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Skanda</h5>
+                            <p class="card-text">When his sister is put into a coma, a man vows to get revenge on the corrupt men who injured her.</p>
+                            <span>Action, Drama, Comedy</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>6.0</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie card -7 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/creator.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">The Creator</h5>
+                            <p class="card-text">Against the backdrop of a war between humans and robots with artificial intelligence, a former soldier finds the secret weapon, a robot in the form of a young child.</p>
+                            <span>Action, Adventure, Drama</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>7.3</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie card - 8 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/omg.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">OMG 2</h5>
+                            <p class="card-text">An unhappy civilian asks the court to mandate comprehensive education in schools in a dramatic yet amusing courtroom play.</p>
+                            <span>Comedy, Drama</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>8.0</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie card - 9 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/nun2.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">The NUN 2</h5>
+                            <p class="card-text">1956 - France. A priest is murdered. An evil is spreading. The sequel to the worldwide smash hit follows Sister Irene as she once again comes face-to-face with Valak, the demon nun.</p>
+                            <span>Horror, Mystery, Thriller</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5.9</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie card -10 -->
+            <div class="card mb-12 mt-2 movie-card" data-bs-theme="dark">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./assets/garda2.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Gadar 2</h5>
+                            <p class="card-text">When Tara Singh goes missing during a skirmish and is believed to be captured in Pakistan, his son Jeete sets out to rescue him and enters a labyrinth from which they both must escape at all costs.</p>
+                            <span>Action, Adventure, Drama</span>
+                            <div class="star-rating" style="color: goldenrod;">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5.8</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -96,15 +329,15 @@
                 <span class="mb-3 mb-md-0 text-muted">© 2023 CinemaSpot.com, Inc</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3">
-                <li class="ms-3"><a href=""><i class="bi bi-facebook"></i></a></li>
-                <li class="ms-3"><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a href=""><i class="bi bi-facebook" style="color: blue;"></i></a></li>
+                <li class="ms-3"><a href=""><i class="bi bi-instagram" style="color: red;"></i></a></li>
                 <li class="ms-3"><a href=""><i class="bi bi-linkedin"></i></a></li>
             </ul>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
