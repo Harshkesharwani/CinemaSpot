@@ -4,11 +4,39 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CinemaSpot</title>
+    <title>CinemaSpot-News</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .news-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
 </head>
 
 <body>
@@ -71,7 +99,8 @@
                                 </svg>
                             </button>
                             <div class="collapse" id="searchCollapse">
-                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                                    data-bs-theme="dark">
                             </div>
                         </div>
                     </div>
@@ -80,8 +109,154 @@
         </nav>
     </div>
 
+    <!-- News Feed -->
+    <div class="container mt-3">
+        <header class="p-3 rounded">
+            <h1><i class="bi bi-newspaper"> Cinema News</i></h1>
+            <hr>
+        </header>
+    </div>
+    <div class="container news-container">
+        <div class="news-item">
+            <h2>Hollywood Movie News</h2>
+            <p>Exciting updates about upcoming Hollywood movies.</p>
+        </div>
 
+        <!-- Add more content as needed -->
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/news1.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">Captain America: Brave New World Is Another MCU Project To Reportedly Undergo Reshoots After Hollywood Strike Ends, Agitated Netizens React, “They Know Those Are Garbage…”</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/news2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">‘Saw X’ Nabs $2M in Previews, ‘The Creator’ Brings In $1.6M. 'Paw Patrol: The Mighty Movie' is the other new offering of the weekend.</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/news3.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">‘They see Hollywood movies as a right’: the Russians breaking the law to watch Barbie</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/news4.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">New York Film Festival Director on Hollywood Strikes and the One Movie He Needed on This Year’s Lineup</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container news-container">
+        <div class="news-item">
+            <h2>Bollywood Movie News</h2>
+            <p>Latest information on upcoming Bollywood releases.</p>
+        </div>
+
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/Fukrey-3.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">Fukrey 3 box office collection Day 1: Richa Chadha, Pankaj Tripathi film opens with Rs 8.5 crore, races ahead of Shah Rukh Khan’s Jawan</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/news5.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">Shah Rukh Khan's Dunki vs Prabhas' Salaar ensures Box Office war this Christmas</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/jawan-poster.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">Jawan box office collection day 22: Shah Rukh Khan’s blockbuster sees spike in numbers despite challenge from Fukrey 3, passes Rs 1030 crore worldwide</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/news7.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">Chandramukhi 2 Box Office Day 2 (Early Trends): Kangana Ranaut & Raghava Lawrence Starrer Goes Down After A Decent Start, Shows A Drop Of Over 20%</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-12 mt-2 movie-card">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="./assets/news8.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-text">Ganapath teaser: Tiger Shroff roundhouse kicks into 2070 AD, Kriti Sanon and Amitabh Bachchan look good</h5>
+                        <a href="#" class="btn btn-primary align-item-end justify-content-end">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-item-center py-3 my-4 border-top rounded">
@@ -91,16 +266,17 @@
                 <span class="mb-3 mb-md-0 text-muted">© 2023 CinemaSpot.com, Inc</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3">
-                <li class="ms-3"><a href=""><i class="bi bi-facebook"></i></a></li>
-                <li class="ms-3"><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a href=""><i class="bi bi-facebook" style="color: blue;"></i></a></li>
+                <li class="ms-3"><a href=""><i class="bi bi-instagram" style="color: red;"></i></a></li>
                 <li class="ms-3"><a href=""><i class="bi bi-linkedin"></i></a></li>
             </ul>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
