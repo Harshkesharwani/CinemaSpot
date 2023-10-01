@@ -9,6 +9,92 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="lightslider.css">
+    <script type="text/javascript" src="jquery3.3.1.js"></script>
+    <script type="text/javascript" src="lightslider.js"></script>
+    <style>
+        .containers-categies {
+            padding: 2rem 0;
+        }
+
+        .box {
+            width: 250px;
+            height: 450px;
+            background-color: #1e1e26;
+            border-radius: 10px;
+            box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin: 50px 0;
+        }
+
+        .model {
+            padding-top: -30px;
+            width: 210px;
+            height: 280px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .details h5 {
+            margin-bottom: 10px;
+            color: #c0292b;
+            font-size: 18px;
+        }
+
+        .Marvel {
+            padding-top: 5px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .box:hover {
+            background-color: #17171d;
+            transform-style: preserve-3d;
+            transform: scale(1.02);
+            transition: all ease 0.3s;
+            color: #c0292b;
+            transition: all ease 0.5s;
+        }
+
+        @media (max-width: 576px) {
+            .box {
+                margin: 20px 0;
+            }
+
+            .details {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #carouselExampleCaptions .carousel-item img {
+                width: 100%;
+                max-height: 300px;
+                object-fit: cover;
+            }
+
+            #carouselExampleCaptions .carousel-inner {
+                max-height: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -61,6 +147,1386 @@
         </nav>
     </div>
 
+    <!-- Main Genres -->
+    <!-- Action -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Action</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth1">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/300.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>300</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/madmax.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Mad Max: Fury Road</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/johnwick.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>John Wick</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/thedarkknighht.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Dark Knight</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/fast6.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Fast & Furious 6</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/mi.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Mission Impossible</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/skyfall.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>SkyFall</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.8</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/war.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>War</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/ekthatiger.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Ek tha Tiger</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>5.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/dhoom3.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Dhoom 3</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>5.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Adventure -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Adventure</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth2">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/indianajones.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Indiana Jones and the Dial of Destiny</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/uncharted.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Uncharted</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/Aladdin.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Aladdin</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/ramsatu.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Ram Setu</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>5.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/jumanji.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Jumanji</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/readyone.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Ready Player One</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/bahubali2.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Bahubali 2</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/Bajrangibhaijaan.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Bajrangi Bhaijaan</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/Backtofuture.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Back to the Future</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/meg.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Meg</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>5.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Anime -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Anime</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth3">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/deathnote.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Death Note</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/Onepiece.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>One Piece</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/Nauto.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Naruto: Shippuden</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/yourname.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Your Name</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/suzume.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Suzume</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/AOT.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Attack On Titan</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>9.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/Dragonball.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Dragon Ball</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/monster.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Monster</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/MHA.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>My Hero Academia</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/pokemon.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Pokemon</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Crime -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Crime</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth4">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/godfather.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Godfather</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>9.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/fiction.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Pulp Fiction</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/seven.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Seven</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/jaibhim.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Jai Bhim</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.8</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/drishyam.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Drishyam</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/satya.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Satya</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/vaastav.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Vaastav: The Reality</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/wednesday.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>A Wednesday</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/Americanpsycho.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>American Psycho</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/zodiac.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Zodiac</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Comedy -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Comedy</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth5">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/Backtofuture.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Back to Future</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/hangover.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Hangover</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/knightandday.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Knight and Day</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/pie.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>American Pie</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/hustle.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Kung Fu Hustle</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/rushhour.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Rush Hour</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/herapheri.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Hera Pheri</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/apnaapna.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Andaz Apna Apna</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/mbbs.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Munna Bhai MBBS</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/golmaal.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Golmaal</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Drama -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Drama</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth6">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/lifeofpi.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Life Of Pi</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/intersteller.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Intersteller</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/prestige.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Prestige</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/aviator.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Aviator</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/rocky.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Rocky</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/blackphone.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Black Phone</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/bharat.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Bharat</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/split.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Split</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/Jersey.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Jersey</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/barbie.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Barbie</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Fantasy -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Fantasy</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth7">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/avatar.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Avatar</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.8</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/pottor.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Harry Potter and the Philosopher's Stone</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/rings.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Lord of the Rings: The Fellowship of the Ring</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.8</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/pirate.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Pirates Of The Caribean The Curse of Black Pearl</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/avenger.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Avenger</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/godzilla.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Godzilla</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/twiligh.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Twilight</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>5.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/makhi.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Makhi</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/bahubali.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Bahubali: The Beginning</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/dragon.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>How to Train Your Dragon</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Horror -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Horror</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth8">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/exocist.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Exocist</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/rite.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Rite</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/hannibal.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Hannibal</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/insidious.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Insidious</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.8</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/conjuring2.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Conjuring 2</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/evil.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Resident Evil</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/tumbbad.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Tumbbad</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/bhool.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>bhool bhulaiyaa</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/stree.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Stree</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/evildead.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Evil Dead</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.4</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sci-fi -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Sci-Fi</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth9">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/inception.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Inception</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.8</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/intersteller.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Intersteller</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/matrix.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Matrix</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.7</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/starwars.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Star Wars Episode 1- The Phantom Menace</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/terminator.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Terminator</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/Backtofuture.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Back to Future</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/wall e.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Wall-e</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/report.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Minority Report</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.6</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/2.0.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>2.0</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/24.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>24</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Thriller -->
+    <div class="containers-categies me-5 ms-5">
+        <h3>Thriller</h3>
+        <hr>
+        <ul class="cs-hidden" id="autoWidth10">
+            <li class="item-a">
+                <div class="box">
+                    <p class="Marvel">#1</p>
+                    <img src="./assets/sense.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Sixth Sense</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <p class="Marvel">#2</p>
+                    <img src="./assets/island.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Shutter Island</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <p class="Marvel">#3</p>
+                    <img src="./assets/andhadhun.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Andhadhun</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <p class="Marvel">#4</p>
+                    <img src="./assets/window.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Secret Window</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.5</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <p class="Marvel">#5</p>
+                    <img src="./assets/ratsasan.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Ratsasan</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#6</p>
+                    <img src="./assets/unbreakable.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Unbreakable</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.3</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#7</p>
+                    <img src="./assets/baby.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>BABY</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>7.9</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#8</p>
+                    <img src="./assets/v.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>V</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.8</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#9</p>
+                    <img src="./assets/park.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>Jurassic Park</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>8.2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="box">
+                    <p class="Marvel">#10</p>
+                    <img src="./assets/expendables3.jpg" alt="" class="model">
+                    <div class="details">
+                        <h5>The Expendables 3</h5>
+                        <div class="star-rating" style="color: goldenrod;">
+                            <i class="bi bi-star-fill"></i>
+                            <span>6.1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 
 
     <!-- Footer -->
@@ -81,7 +1547,90 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
 
+            $('#autoWidth1').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth1').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth2').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth2').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth3').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth3').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth4').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth4').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth5').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth5').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth6').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth6').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth7').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth7').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth8').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth8').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth9').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth9').removeClass('cS-hidden');
+                }
+            });
+
+            $('#autoWidth10').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth10').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
