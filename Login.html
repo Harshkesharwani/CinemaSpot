@@ -4,13 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CinemaSpot - Contact us</title>
+    <title>CinemaSpot - Login</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            background-color: #333;
+            color: white;
+            font-family: 'Your Custom Font', sans-serif;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .navbar a:hover,
+        .navbar a:active {
+            color: yellow;
+        }
+
+        form {
+            max-width: 350px;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,7 +65,7 @@
                             <a class="nav-link" href="./Contactus.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Login.html">Login</a>
+                            <a class="nav-link" href="#">Login</a>
                         </li>
                     </ul>
                     <div class="d-flex ms-auto">
@@ -66,55 +88,45 @@
         </nav>
     </div>
 
-    <!-- Contact Us -->
-    <div class="container mt-3">
-        <div class="row rounded-5">
-            <div class="col-md-7">
-                <h1>Contact Us</h1>
-                <div class="mb-3">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingName" placeholder="John Cena">
-                        <label for="floatingName">Name</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingEmail" placeholder="Johncena@xyz.com">
-                        <label for="floatingEmail">Email Address</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" id="floatingMobile" placeholder="XXXXXXXXXX">
-                        <label for="floatingMobile">Mobile No.</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" id="floatingMessage" placeholder="Message"></textarea>
-                        <label for="floatingMessage">Message</label>
-                    </div>
-                    <button class="btn btn-outline-dark">Send</button>
-                </div>
+    <!-- Login -->
+    <div class="container">
+        <form>
+            <h2>Login in</h2>
+            <br>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" />
+                <label class="form-label" for="form2Example1">Email address</label>
             </div>
-            <div class="col-md-5 rounded-3">
-                <div class="mt-5">
-                    <a href="" style="text-decoration: none; color: white;"><div class="d-flex">
-                        <i class="bi bi-geo-alt-fill me-2"></i>
-                        <p>Aashra Parishad Chobey Colony Raipur, 952001 Chhattisgarh</p>
-                    </div></a>
-                    <a href="" style="text-decoration: none; color: white;"><div class="d-flex">
-                        <i class="bi bi-telephone me-2"></i>
-                        <p>7999232409</p>
-                    </div></a>
-                    <a href="" style="text-decoration: none; color: white;"><div class="d-flex">
-                        <i class="bi bi-envelope-at me-2">
-                        <span>kesharwani@gmail.com</span>
-                        </i>
-                    </div></a>
-                    <br>
-                    <div class="d-flex justify-content-center">
-                        <a href=""><i class="bi bi-facebook me-4"></i></a>
-                        <a href=""><i class="bi bi-instagram me-4" style="color: red;"></i></a>
-                        <a href=""><i class="bi bi-linkedin me-4" style="color: white;"></i></a>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" />
+                <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+                        <label class="form-check-label" for="form2Example34"> Remember me </label>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p>Not a member? <a href="./Register.html">Register</a></p>
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                </button>
+            </div>
+        </form>
     </div>
 
 
@@ -136,6 +148,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
 
 </body>
 
